@@ -1,10 +1,21 @@
-var util = require("util");
+// var mysql = require("mysql");
+
+// var conn = mysql.createConnection({
+//   host:"localhost",
+//   user :"root",
+//   password:"",
+//   database:"advik_genius_class"
+// })
+
+// var exe = util.promisify(conn.query).bind(conn);
+
+// module.exports=exe;
 
 require('dotenv').config();
 
 const mysql = require('mysql');
+var util = require("util");
 
-// Create a MySQL connection using environment variables
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -12,7 +23,6 @@ const connection = mysql.createConnection({
     database: process.env.DB_NAME,
 });
 
-// Connect to the database
 connection.connect((err) => {
     if (err) {
         console.error('Error connecting to the database:', err);
@@ -21,8 +31,5 @@ connection.connect((err) => {
     console.log('Connected to the database');
 });
 
-// Promisify the connection query method to use async/await
 var exe = util.promisify(connection.query).bind(connection);
-
-// Export the promisified query method for use in other parts of the application
-module.exports = exe;
+module.exports=exe;
