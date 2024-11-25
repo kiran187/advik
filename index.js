@@ -28,7 +28,7 @@ app.use("/",userroute);
 app.use("/admin",adminroute);
 
 
-const PORT = process.env.PORT || 1000;  // Default to 1000 if no PORT is defined
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
