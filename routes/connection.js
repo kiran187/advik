@@ -1,5 +1,5 @@
 // var mysql = require("mysql");
-// var util = require("util");
+var util = require("util");
 
 // var conn = mysql.createConnection({
 //   host:"localhost",
