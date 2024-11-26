@@ -126,7 +126,7 @@
 </div><br>
 
 <!-- Submit Button -->
-<button type="submit" class="btn btn-primary w-100">Submit</button>
+<button type="submit" class="btn btn-primary w-100"  id="feedback" onclick="showAlert()">Submit</button>
 </form>
 </div>
 </div>
@@ -143,6 +143,22 @@
 </div>
 </div>
 </div>
+
+<script>
+
+
+  function showAlert() {
+Swal.fire({
+  position: "center-center",
+  icon: "success",
+  title: "Form submitted successfully!",
+  showConfirmButton: false,
+  timer: 2000
+});}
+showAlert()
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 <%- include("footer.ejs") %>

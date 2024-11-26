@@ -107,7 +107,7 @@ margin-left: 400px;
 }
 @media (max-width:768px){
     .Ab_backgroung{
-        background-image: url("/user/images/logoclass.png");
+        background-image: url("/public/user/images/");
         background-size: cover;
     /* background-position: center; */
     background-attachment: fixed;
@@ -369,7 +369,7 @@ margin-left: 400px;
 .background_main{
 
         width: 100%;
-        background-image: url("/user/images/logoclass.png");
+        background-image: url("/public/user/images/logoclass.png");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
