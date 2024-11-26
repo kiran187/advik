@@ -1,6 +1,6 @@
 <%-include("navbar.ejs")%>
 
-<section class="slide-img-courses" style="background-image: url('/uploads/Education.jpg');">
+<section class="slide-img-courses" style="background-image: url('/public/uploads/Education.jpg');">
   <div class="container py-5">
       <div class="row py-5" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-white text-center">Courses</h1>
@@ -63,8 +63,7 @@
       <% for(i of popular_courses){ %>
 
       <div class="courses" data-aos="flip-left" data-aos-duration="1500">
-        <img
-          src="/uploads/<%- i.popular_courses_photo %>"
+        <img src="/public/uploads/<%- i.popular_courses_photo %>"
           alt="">
         <div class="details mt-4">
           <h3><%- i.popular_courses_text %></h3>
@@ -250,9 +249,9 @@
   </script>
 
   
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="/publichttps://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/publichttps://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/publicscript.js"></script>
   <script>
 var swiper = new Swiper(".mySwiper", {
  spaceBetween: 30,

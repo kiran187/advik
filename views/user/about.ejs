@@ -1,6 +1,6 @@
 <%- include("navbar.ejs") %>
 <!-- About_header -->
-<section class="Ab_backgroung" style="background-image: url('/user/images/pngtree-japanese-school-students-in-classroom-studying-at-desks-picture-image_2650737.jpg');">
+<section class="Ab_backgroung" style="background-image: url('/public/user/images/pngtree-japanese-school-students-in-classroom-studying-at-desks-picture-image_2650737.jpg');">
   <div class="container py-5 topbar">
       <div class="row py-5" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-white text-center">About</h1>
@@ -27,7 +27,7 @@
             <%-old_data.aboutText2%>.</p>
            </div>
         <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-          <img src="/uploads/<%-old_data.aboutImage%>" height="400" width="600" class="ms-3 mt-5 mb-4 rounded About_Home_img" alt="">
+          <img src="/public/uploads/<%-old_data.aboutImage%>" height="400" width="600" class="ms-3 mt-5 mb-4 rounded About_Home_img" alt="">
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@
         </div>
         </div>
         <div class="col-md-5 col-12">
-          <img class="my-5 Teacher_Img img-fluid" src="/uploads/<%-founders.founder_photo%>"  alt="">
+          <img class="my-5 Teacher_Img img-fluid" src="/public/uploads/<%-founders.founder_photo%>"  alt="">
       </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
               <div class="testimonial-card">
-                <img src="/uploads/<%=i.testimonial_photo %>" alt="Smiling young man with notebooks giving a thumbs up" class="student-img">
+                <img src="/public/uploads/<%=i.testimonial_photo %>" alt="Smiling young man with notebooks giving a thumbs up" class="student-img">
                 <p class="lead"><%=i.testimonial_text %></p>
                 <p class="student-name"><%=i.testimonial_name %></p>
               </div>
