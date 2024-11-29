@@ -511,13 +511,22 @@ router.post("/gallery_page", async function (req, res) {
     if (req.files) {
         var files_name2 = new Date().getTime() + req.files.gallery_img.name;
         req.files.gallery_img.mv("public/uploads/" + files_name2);
+
+        
+        
     }
+
+   
+    //res.send(data2)
 
 
     var sql = `INSERT INTO gallery(category_id,gallery_video,gallery_text,gallery_text2,gallery_img)VALUES ('${d.category_id}'
     ,'${d.gallry_video}','${d.gallry_text}','${d.aboutText2}','${files_name2}')`;
+   
     var data = await exe(sql);
     // res.send(data);
+
+   // res.send(data);
 
     res.redirect("/admin/gallry");
 });
@@ -1090,10 +1099,10 @@ router.post("/couser_page", async function (req, res) {
     ('${d.category_id}','${d.subject}','${d.start_date}','${d.time}','${d.teacher_name}','${d.meeting_link}')`;
 
 
-    var data = await exe(sql);
+     var data = await exe(sql);
 
-    //res.send(data);
-    res.redirect("/admin/course")
+    //res.send(d);
+     res.redirect("/admin/course")
 });
 
 router.get("/level_category", async function (req, res) {
